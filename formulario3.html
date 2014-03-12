@@ -1,0 +1,38 @@
+<?php require_once 'validate.php'; ?>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div>EL FORMULARIO</div>
+        <form action="resultado3.php" method="GET">
+            <p>Nombre: <input type="text" name="nombre" /></p>
+            <p>Edad: <input type="text" name="edad" /></p>
+            <p>Solicita beca <input type="checkbox" name="beca"/></p>
+            <p>Sexo </br>
+                <input type="radio" name="sexo" value="Varon"/> Masculino
+                <input type="radio" name="sexo" value="Mujer"/> Femenino
+            </p>
+            <p>Estado civil
+                <Select name="estado">
+                    <option selected disabled>Seleccionar...</option>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Viudo</option>
+                </select>
+            </p>
+            <p>Aficiones musicales
+                <Select name="aficiones" size="3">
+                    <option selected disabled>Seleccionar...</option>
+                    <option>Tocar la bandurria</option>
+                    <option>Tocar la guitarra</option>
+                    <option>Tocar la flauta</option>
+                    <option>Tocar el violonchello</option>
+                </select>
+            </p>
+            <p><input type="submit" value="Enviar" /></p>
+        </form>
+    </body>
+</html>
